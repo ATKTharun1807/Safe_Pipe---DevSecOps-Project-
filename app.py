@@ -85,19 +85,15 @@ def mask_value(val, show_full=False):
 
 # ---------- Sidebar: File Selection ----------
 st.sidebar.header("Scan Options")
-uploaded_file = st.sidebar.file_uploader("Upload a file for scanning", type=["txt", "py", "js", "env"])
-use_demo_file = st.sidebar.checkbox("Use demo test file (`test_secrets.txt`)", value=True)
+uploaded_files = st.sidebar.file_uploader("Upload files for scanning", type=["txt", "py", "js", "env", "json", "md"], accept_multiple_files=True)
+use_demo_file = st.sidebar.checkbox("Use demo test file (`test_secrets.txt`)", value=not uploaded_files)
 show_full = st.sidebar.checkbox("Show full secret values (warning: exposes secrets)", value=False)
 
 # ---------- Prepare Demo File ----------
-file_path = None
-if uploaded_file:
-    # keep uploaded_file as-is; we'll read its bytes when scanning
-    file_path = None
-elif use_demo_file:
-    file_path = "test_secrets.txt"
+demo_file_path = "test_secrets.txt"
+if use_demo_file:
     try:
-        with open(file_path, "x") as f:
+        with open(demo_file_path, "x") as f:
             f.write("""\
 # Dummy secrets for testing
 AWS_KEY=AKIA1234567890ABCD
@@ -111,29 +107,34 @@ TOKEN=abcd1234efgh5678ijkl9012mnop3456qrst
 
 # ---------- Scan Button ----------
 if st.button("Start Scan"):
-    if not file_path:
-        st.error("Please upload a file or select demo file.")
+    if not uploaded_files and not use_demo_file:
+        st.error("Please upload files or select the demo file.")
     else:
-        st.info("Scanning file, please wait...")
+        st.info("Scanning files, please wait...")
 
-        # Determine source and content depending on uploaded file vs demo file
         findings = []
-        if uploaded_file is not None:
+        
+        # 1. Scan Uploaded Files
+        if uploaded_files:
+            for uploaded_file in uploaded_files:
+                try:
+                    raw = uploaded_file.read()
+                    content = raw.decode('utf-8', errors='ignore')
+                    source = uploaded_file.name
+                    findings.extend(scan_content(content, source=source))
+                    # Reset pointer for potential re-reads
+                    uploaded_file.seek(0)
+                except Exception as e:
+                    st.error(f"Error reading {uploaded_file.name}: {e}")
+
+        # 2. Scan Demo File if selected
+        if use_demo_file:
             try:
-                raw = uploaded_file.read()
-                # uploaded_file.read() returns bytes; decode safely
-                content = raw.decode('utf-8', errors='ignore') if isinstance(raw, (bytes, bytearray)) else str(raw)
-                source = getattr(uploaded_file, 'name', '<uploaded>')
-                findings = scan_content(content, source=source)
-            except Exception as e:
-                st.error(f"Error reading uploaded file: {e}")
-        elif file_path:
-            try:
-                with open(file_path, 'r', errors='ignore') as f:
+                with open(demo_file_path, 'r', errors='ignore') as f:
                     content = f.read()
-                findings = scan_content(content, source=file_path)
+                findings.extend(scan_content(content, source="demo_test_secrets.txt"))
             except Exception as e:
-                st.error(f"Error reading {file_path}: {e}")
+                st.error(f"Error reading demo file: {e}")
 
         # ---------- Summary ----------
         total, type_counts, files, severity_counts = summarize_findings(findings)

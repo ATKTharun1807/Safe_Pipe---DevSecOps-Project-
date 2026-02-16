@@ -1,26 +1,1358 @@
 [
     {
-        "type": "Private Key",
-        "value": "-----BEGIN PRIVATE KEY-----",
-        "file": "test_secrets.txt",
-        "severity": "Critical"
-    },
-    {
-        "type": "Password",
-        "value": "password='MyP@ssw0rd!'",
-        "file": "test_secrets.txt",
+        "type": "Token",
+        "value": "CLOhKgdfJe1Fa8uw9seJYvdOmnP9JBWGWHW69HkO",
+        "file": "package-lock.json",
         "severity": "Low"
     },
     {
         "type": "Token",
-        "value": "",
-        "file": "test_secrets.txt",
+        "value": "ixXS6Wy9yvGf1MbhcS6lVmrhy4jm2g",
+        "file": "package-lock.json",
         "severity": "Low"
     },
     {
         "type": "Token",
-        "value": "",
-        "file": "test_secrets.txt",
+        "value": "qv3jnwoakeax2razYaMsGI",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "luWdliBLHTdC6jU55hQt1hcFqzauH",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "bDr6TqjBVS2rDyYM9CPxAnotj5FuNL9NF8o7h7Yy",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "PkSb2mJvvw991bqdftazkEo38gykvaww",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "CiJJvcRtIgzadHCYXw7dqEnMNRjhGZlYK05Mj9Oy",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ktqV8uVT8fD2BFOB7S1uwBE3Kj2Z",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "xoEvvYqvnIHaVqaYrLPbsufM9BF63HkwI5Lgmy2Q",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "lYDYo5AK82wOvSOS0UsLTpTG7uQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "PYAthTa2m2VKxuvSD3DPC",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "NHcVF7rONl6qcaxV3Uuemwawk",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "PCVAQswWemu6UdxsDFFX",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "gVeYqKAod3D3UVm91jHwynguOwAvYPhx8nNlM",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "NqRcK6CxxpUafjmhIdKiHibqg",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "D090e4hIIZLBcTDWe4Mh4jvUDajzQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "HA2dGX7bqGc71txDRC1rS4frdFI5R7NhluHxH6M0",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "YItAP0sHB4uqAOcYKxO6uGA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "WIsKqkSC0ABoBJuT1LEX",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "2HEvNmNKKgnTAyd0fL8qzK4SH2i9NXg",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "V9IZ33cxe3iV4yM0qg8lMQng",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Nf7TyzTx6S3yRJObOAV7956r8cr2",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTS",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "oKlSFMcMwpUg2ednkhQ454wfWiU",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "PEHcTKuiX6RpbehUiFMXu13HalGZxfUwCQzZG747",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Sp1ablJ0ivDkSzjcaJdxEunN5",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "XvksFJ2sMBFfq6x0ryhQV",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "KwFe21cMpmHtPOSij8K99",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKu",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "FveZTNuGw04cxlAiWbzi6zTAL",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "E95DqMwTmha3KZN1aAWA8cFIhHzMZUvLevkw5Rqk",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopT",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "0tTr8QqiU0tFadD6FK4NtJwOA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXE",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "NXdYc3dLr47pBkpUCHtKSwIOQXLVn8dZEuywboCO",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "osA0wFSLlSawr3KN8qXJEyX66FcONTH8EIlVuK0y",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "hnbrO9uBeixNGuvSQjul",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "YrEfInLG7q4n6GHQ9cDtxv",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jX",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "E7AdgFBVeAPVMNcKGsHMA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "HAYqsLrkg7MSfIinMPFhmkorw7X",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "QT69zGkzMyfDnIMN2Wid1",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "g7nH6P6dyDioJogAAGprGpCtVImJhpPk",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "OlC3yBC0lESvUoQEAssIrw",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3K",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQI",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "hgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "vRuETqG89IgZphVSNkdFgeb6sS",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQl",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxn",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPV",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "hAmMzIlypy4xcBg1vKVnx89Wy0GbS",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "kf5cwCVFFzdCFh2XSCFNULS6csw",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "FGgH2h8zKNim9ljj7dankFPcICIK9Cp5bm",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Pe6FGJzWhXQotPv73jTaldXA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "NiSupZ4OeuGwr68lGIeym",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "F2X8g9P1X7uCPZMA3MVf9wcTqlyNp7IhH5qPCI0i",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "zhaOIYXaW9L535tGA3qmjRzpH",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "aA4RyPcd3badbdABGDuTXCMTtOneUCAYH",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "gxoYRTZlIJdF0YPWuGqiAsIrhNnnqdXGswYk6dGu",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6Nx",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "MVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPd",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "7XHNxH7qX9xG5mIwxkhumTox",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "oVO0F744iUgR82nJMfG2SA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ybC0vjlHN0ZGVGHc3lgE0DxPAT0djjVg",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "kjOnSqclqmj0KQ7ykTOLP6YxoqOvuAODGdcHJn",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "xSJlE6lfwhES7LNtKaCBIamHsjr2na1BiABJPo0m",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Ojjz8GJDURarmCPGqaiVg5mfjb98CQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiG",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "kUFoAiTAtTYPZJ3hw9wNxx",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYR",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgki",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "d0YQtnAleFSqumZm4az3n2BS",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2Dv",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7b",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "bSdmo4AUFuS0WNiPz8NgFt",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "r8ThgNWmlrjQjt1Q7ZR9",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "zTlce2859x4KSXrwIsaeTqDoKQmtP8pLmQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqd",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "XXOFtyqDjNDAQxVfYxuF7g9Il",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1b",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "tfzxq15ciUiY7gjSXRGQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAsk",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "607xoxSToH7GjN1FfSbLoU0",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "wrIAOzb8U1aszg9kdi3KN",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "CyU19CTI7tAoZYEZoL9yCDXpbXN",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjE",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "upqt1SkGkODW9tsGNG5mtXTXtECizwtS2kA161M",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Ax629af6YrTwcOeQHbewrPNlE5Dx7kzvXTizA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "MjYsKHO5O7mCsmRGxWcLWheFqN9DJ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "2TmngvjKXihe6efViPqc274",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ESvBdTXK0V6tA3rgez1g",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "p3EcsicXjit7SaskXHs1hA91QxgTw46Fv6EFKKGS",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "5DRFLD8yKnohjF3hxoju94b",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "OcMZoQukzpPpBE9uLVKzgQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ipq9LfjFfXFxAZMQJJq7vLS45r3D9Y2xQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "m4S8zaR4zMLFWh9AsNPXmcFfUDhTEO8UIC",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "RiNhHysUjhrDQntfYSfY4MU24coXXdEOgw9WGcKH",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "u87M1EWaMGzuFoSbqW0C9C6lEEhDOAswfw",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "AOMkkIrHM3Z1PAyGgZigA1H1p5O5ANnMyWzvpAET",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679w",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "0Zzm0pR8whtGPf1XExKLJBAczGMnSi3It14OiNCS",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "tjQjM6NU1okjQGSxgEZN8eBYKg",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "pdbjbAwUpFQpN70GqnVfOiXpeUUMKRBmzXaSQ8Dd",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "1L2yUIdvzNoauKU4WBA3VvH",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "DA9P9bPXIS90ulxoUoCH23sV2w",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOp",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "NkmYmmRgP68mc70j2EbeTFRsrswaQeg",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxD",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "CB9mUYvOgroQOwYQQOKPJ8CIbE",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "YpCrAU9nK0UgICYPT0QtT1NZWFv4s",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "4R2uI4MjQjzysHB1zxuWL50hzaeXiw",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "sZQqRBoGlFsOgNrH5ltAcFBV62Re3Fd",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "FcaVf8uSEQFOJ51SDowDVttBTONMfoYWrWlQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "peerDependenciesMeta",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Kc2x0g72uhDWzG48URRax5TCIcJ7Rc3RZqffZzO",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "dW2U01gN8EVQT5KAO5AkzjbqWc8A",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "M9ISpy8jw3iq7W9ZP135h9zykFOMt3AMxq4",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ikJRQTk8hw5DEoFVxHG1Gn9T",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "xcjtdnOKIU1JTmGjZZlg9LST2mBLmcX3",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ICIbgJydT2GOc15RnNy5mHmzfSew",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "iQMncpmEK8R8ncT8HJGsGc9Dsp8xcgYMVSbs5jgn",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "m1lFHTZqMJTUWTDx1LBO8",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "mK3tPNZWFLBghQEIOULSTHZg",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "RGwwWnwQvkVfavKVt22FGLw",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryr",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "TlLpuvgI9GiijltAjNbcqA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "peerDependenciesMeta",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4P",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "CPnGMoFjC9ddhal5KVIYtAt97ix05A",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "QORGBjXbIeZeWvIjO3OMLyAvlKT3hiJubP2BKEiF",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "niUlR3L01o18ktqgn5jxqA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "zdChZjsnX51g4XrHFOIXwfnCVPGlQk",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "k5giakcKsuxCObBRu6DSm9opw",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "JNDoXfklElbLJSnc3FUQHVe4cU5hj",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "W67iLl4J2EXEGTbfeHCffrjDfitvLANg0UlX3wFU",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "USTx92KXRFegMHUVgSqE",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "wvhAbi4WqjGg9czysTV2Epbew",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "oVlzkg3ENAhCk2zdv7IJwd",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "RA1GjUVMnvYFxuqovrEqZoxxW5NUZqbwKtYz",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Tt7nXerk0LbLblQmrsgdeOxV5SFHf0UDggjS",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvH",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "EszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodk",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ZwrmmZcoSKyLKvtZxpyV0n2",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "vYt7UD1U9Wg6138shLtLOvdAu",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFt",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "qR7RgXSK9jEEm9unao3njwMDdmsdvoKBKHzxd7tC",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "orqoygnmhFbKaHE6c296J",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "s4VSOf6yN0rvbRZGxs8Om5CWj6seneMwK3oDb4lW",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "qk24bxq87szX1ydrwylIOp2uG1ojUpA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "GD6bjnYm2VuPuCXmpuYvmCXQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "Cz4YrimQxQccJf5mKEbIa1NzeCRNI5Ecl",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ekmlYaampdNLPalVyIcCZNNH3MvmqBugV5TMYZXv",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHH",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "g1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqc",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "VMbMxbDeehAxpOtWJXlcUS5E8iXh6QmN",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "BkRX1GARS3wRaXEEgzCcB10gTQazO42tpNIya8xI",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "x0RTqQel6g5SY7Lg6ZreMmsOzncHFU7nhnRWkKgW",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "uMTu5NN0DR5oruckMqRvacAN9d5w6ARnRBXl9xhD",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90E",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVG",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "dGH8xFpPWXUMsNrlODCrkoxMEeNi",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "VBrslhda51Nh5MTQwou5tnUDgbtyM0dBgmhEDtWG",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "xbKn6hqfPRHujUNwz5fy",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "wzCmDEkc9y7NsYxeF4u7Btsn1ZuwgwJGxImImHic",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "JArLP4R0yX4c2KCrMrTA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "VCjCNfgMsby3tTdo02nbjtM",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ewra6jPHmpThenkTYh8pG9ucZ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "HvHQTYnHisLo9McqBHOJk2FkHO",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "tlpvldyrnem4aeQp4hai3gythswg6p01oSoTl58r",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "EF1igRbbnGSvEyT79McoZa",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "DeGhMyC5pWKOEsZKnpkqtSeovd5FL",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "2D2PIllw2ymqJKujUcyPMd9Y75Nv4nPbGJZXNhxs",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "gdQab2BmlDct1YnfQCguEvHr7VsQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYB",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "ACJE3Ul2pTnATihhBYnRhZQHGBiRw",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "hdF5ZgjTqgAntKkklYw0R03MG2x",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "sTNV8YXsCJ1tfLAX23lhxhHJlEf3CRCOCGGWw3vI",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "3Kym598JVdEksuzPQCnlFPW4ky9Q",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "wuJlK6uz0YdJEOlQDbl6jo",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "NCNAWclkyg3b4d2k7s0QGepNjiABc",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "aR3N1PAyHL7p6UcLY6LmrnA",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzP",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "IzQOzmAKzYqYRAISoRhdQr3eIZ",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "VwddBukDzu71offAQR975unBIGqfKZpM",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "De72GdQZzNTUBBChsXueQUnPKDkg",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "5A5zp7pFDuQAj5UFoENpiACU0wlCvzpAGnTkj",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "rEvr90Bck4WZt9HHFC4DJMsjvu7x",
+        "file": "package-lock.json",
+        "severity": "Low"
+    },
+    {
+        "type": "Token",
+        "value": "BrbWb7A2djJ8hnZMrWnHo9F8ssv0OMErasDhftrf",
+        "file": "package-lock.json",
         "severity": "Low"
     }
 ]
