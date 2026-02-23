@@ -58,13 +58,19 @@ def scan_folder(folder_path, output_file="scan_results.json"):
     if not os.path.exists(folder_path):
         raise FileNotFoundError(f"Folder not found: {folder_path}")
 
-    for file_name in os.listdir(folder_path):
-        file_path = os.path.join(folder_path, file_name)
-        findings = scan_file(file_path)
-        all_findings.extend(findings)
+    if os.path.isfile(folder_path):
+        all_findings = scan_file(folder_path)
+    else:
+        for root, dirs, files in os.walk(folder_path):
+            for file_name in files:
+                file_path = os.path.join(root, file_name)
+                findings = scan_file(file_path)
+                all_findings.extend(findings)
 
     # Save to JSON
-    with open(output_file, "w") as f:
-        json.dump(all_findings, f, indent=4)
-    print(f"Scan complete! {len(all_findings)} secrets found. Results saved to {output_file}")
+    if output_file:
+        with open(output_file, "w") as f:
+            json.dump(all_findings, f, indent=4)
+        print(f"Scan complete! {len(all_findings)} secrets found. Results saved to {output_file}")
+    
     return all_findings

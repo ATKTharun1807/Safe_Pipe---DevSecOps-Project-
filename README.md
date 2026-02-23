@@ -1,43 +1,31 @@
-
 ---
 
 # **SafePipe**
 
-A powerful and developer-friendly **secret leak detection system** designed to help teams identify exposed API keys, tokens, credentials, and sensitive data across repositories and CI/CD pipelines.
-Built with **FastAPI**, **React**, and **Python-based scanners**, SafePipe ensures secure software development through automated scanning, alerting, and reporting.
+A powerful and developer-friendly **secret leak detection tool** designed to help teams identify exposed API keys, tokens, credentials, and sensitive data across repositories. SafePipe ensures secure software development through automated scanning and a professional dashboard.
 
 ---
 
 # **Table of Contents**
 
-* **Features**
-* **Project Structure**
-* **Setup Instructions**
-* **Usage**
-* **Screenshots**
-* **Contributing**
-* **License**
+* [Features](#features)
+* [Project Structure](#project-structure)
+* [Setup Instructions](#setup-instructions)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [License](#license)
 
 ---
 
 # **Features**
 
-* 🔍 **High-accuracy secret detection** (regex + entropy)
-* ⚡ **CI/CD integration** (GitHub Actions, GitLab, Jenkins, Bitbucket)
-* 🖥️ **Modern React Dashboard** to view scan results
-* 🚨 **Instant alerts** via Email/Slack with recommended remediation
-* 📄 **Exportable reports** (PDF, CSV, JSON)
-* 🤖 **AI-based summaries & risk scoring** (upcoming)
-* 🔐 Supports detection of:
-
-  * API keys
-  * Access tokens
-  * OAuth secrets
-  * JWTs
-  * Passwords
-  * Cloud keys (AWS, GCP, Azure)
-  * Database credentials
-* 🌐 Works across multiple programming languages & file types
+* 🔍 **Recursive Folder Scanning**: Scan entire projects or specific subdirectories for secrets.
+* � **File Upload Support**: Upload specific files directly to the dashboard for instant analysis.
+* � **Local Path Scanning**: Enter any local or network path to scan for sensitive data.
+* ⚡ **High-accuracy Detection**: Uses advanced regex patterns to find AWS keys, private keys, passwords, and tokens.
+* 🖥️ **Professional Streamlit Dashboard**: User-friendly interface with real-time metrics and results.
+* 📊 **Exportable Reports**: Download scan results in JSON format for further analysis.
+* 🔒 **Masked Results**: Sensitive findings are masked by default to prevent shoulder surfing.
 
 ---
 
@@ -46,69 +34,12 @@ Built with **FastAPI**, **React**, and **Python-based scanners**, SafePipe ensur
 ```
 safepipe/
 │
-├── scanner-backend/                # Python FastAPI + Secret Scanner Engine
-│   ├── main.py
-│   ├── api/
-│   ├── scanner/                    # All secret detection logic
-│   ├── utils/
-│   ├── models/
-│   ├── config/
-│   ├── reports/
-│   ├── requirements.txt
-│   └── Dockerfile
-│
-├── ci-pipeline/                    # TypeScript CI/CD Webhook + Job Engine
-│   ├── src/
-│   │   ├── index.ts
-│   │   ├── routes/
-│   │   │   └── github.ts
-│   │   ├── workers/
-│   │   │   └── scannerWorker.ts
-│   │   ├── services/
-│   │   │   └── repoClone.ts
-│   │   ├── utils/
-│   │   │   └── queue.ts
-│   │   └── config.ts
-│   ├── package.json
-│   ├── tsconfig.json
-│   ├── Dockerfile
-│   └── README.md
-│
-├── dashboard/                       # React Dashboard (Results Viewer)
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── App.jsx
-│
-├── jobs/                            # Shared schemas between services
-│   └── scan_job_schema.json
-│
-├── deployments/                     # Docker + Kubernetes in future
-│   ├── docker-compose.dev.yml
-│   ├── scanner-backend.dockerfile
-│   ├── ci-pipeline.dockerfile
-│   ├── dashboard.dockerfile
-│
-├── docs/                            # Documentation & diagrams
-│   ├── architecture/
-│   ├── workflows/
-│   └── screenshots/
-│
-├── scripts/                         # Automation scripts
-│   ├── deploy_scanner.sh
-│   ├── deploy_ci.sh
-│   └── testing/
-│
-├── tests/                           # Optional unit/integration tests
-│
-├── .github/workflows/               # CICD for GitHub
-│   ├── scanner-ci.yml
-│   ├── ci-pipeline-ci.yml
-│   └── dashboard-ci.yml
-│
-└── README.md
-
- 
+├── app.py                      # Main Streamlit Dashboard Application
+├── safe_pipe_core.py           # Core scanning logic and patterns
+├── run_safe_pipe.py            # CLI interface for folder scanning
+├── test_secrets.txt            # Demo file with mock secrets
+├── requirements.txt            # Python dependencies
+└── reports/                    # Folder for generated scan reports
 ```
 
 ---
@@ -119,108 +50,61 @@ safepipe/
 
 ```bash
 git clone <your-repo-url>
-cd safepipe
+cd Safe_Pipe---DevSecOps-Project-
 ```
-
----
-
-## **Backend Setup (FastAPI)**
 
 ### **2. Create & activate virtual environment**
 
 ```bash
 python -m venv venv
-venv/Scripts/activate   # Windows
-# OR
-source venv/bin/activate  # macOS/Linux
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
 ```
 
 ### **3. Install dependencies**
 
 ```bash
-pip install -r backend/requirements.txt
+pip install -r requirements.txt
 ```
-
-### **4. Configure environment**
-
-Update values in `backend/config/settings.py`:
-
-* Database credentials
-* Email alert settings
-* Slack webhook
-* JWT secret
-
-### **5. Run backend**
-
-```bash
-cd backend
-uvicorn main:app --reload
-```
-
----
-
-## **Frontend Setup (React Dashboard)**
-
-### **6. Install dependencies**
-
-```bash
-cd dashboard
-npm install
-```
-
-### **7. Start development server**
-
-```bash
-npm run dev
-```
-
-### **8. Access the dashboard**
-
-Open:
-👉 [http://localhost:5173/](http://localhost:5173/)
-
-Backend API:
-👉 [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ---
 
 # **Usage**
 
-* Start **backend** and **dashboard**.
-* Upload or link a repository for scanning.
-* SafePipe detects secrets automatically in files, commits, and branches.
-* View results with severity levels on the dashboard.
-* Export reports as PDF/CSV/JSON.
-* Configure Email/Slack alerts for real-time notifications.
-* Integrate SafePipe with CI/CD pipelines to block insecure deployments.
+### **Running the Dashboard**
+
+Launch the interactive dashboard using Streamlit:
+
+```bash
+streamlit run app.py
+```
+
+### **Running the CLI Scanner**
+
+Scan a folder directly from the command line:
+
+```bash
+python run_safe_pipe.py --folder ./my_project --output results.json
+```
 
 ---
 
-# **Screenshots**
+# **Scanning Features**
 
-(Add screenshots in the `docs/screenshots/` folder)
-
-```
-![Dashboard Overview](docs/screenshots/dashboard.png)
-![Scan Results](docs/screenshots/scan_results.png)
-![Alerts](docs/screenshots/alerts.png)
-```
+1. **Upload Files**: Drag and drop any file into the sidebar to scan it instantly.
+2. **Local Path**: Provide a full path (e.g., `C:/Projects/MySecrets`) to recursively scan all files in that directory.
+3. **Demo Mode**: Enable the "Use demo test file" checkbox to see the scanner in action with sample data.
 
 ---
 
 # **Contributing**
 
-Pull requests are welcome!
-
-To contribute:
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Open a Pull Request
-
-For major changes, please open an issue to discuss them first.
+Pull requests are welcome! For major changes, please open an issue to discuss them first.
 
 ---
 
-If you want, I can compile this into a **ready-to-upload README.md** with formatting, badges, and styling.
+# **License**
+
+[MIT](LICENSE)
