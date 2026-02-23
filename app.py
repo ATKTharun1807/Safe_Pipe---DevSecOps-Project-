@@ -4,6 +4,7 @@ import re
 import json
 from collections import Counter
 import streamlit as st
+from safe_pipe_core import SECRET_PATTERNS, SEVERITY_MAP
 
 # ---------- Streamlit Page Config ----------
 st.set_page_config(page_title="SafePipe Dashboard", layout="wide")
@@ -13,23 +14,7 @@ Detects sensitive information like API keys, AWS tokens, passwords, and private 
 Run scans instantly and view results in a professional dashboard.
 """)
 
-# ---------- Secret Patterns ----------
-SECRET_PATTERNS = {
-    "AWS Access Key": r"AKIA[0-9A-Z]{16}",
-    "AWS Secret Key": r"(?i)aws(.{0,20})?['\"][0-9a-zA-Z/+]{40}['\"]",
-    "Private Key": r"-----BEGIN PRIVATE KEY-----",
-    "Password": r"(?i)password\s*=\s*['\"].+?['\"]",
-    "Token": r"[A-Za-z0-9]{20,40}(\.[A-Za-z0-9]{20,40}){0,2}"
-}
-
-# ---------- Severity Mapping ----------
-SEVERITY_MAP = {
-    "Private Key": "Critical",       # Red
-    "AWS Access Key": "Medium",      # Orange
-    "AWS Secret Key": "Medium",      # Orange
-    "Password": "Low",               # Green
-    "Token": "Low"                   # Green
-}
+# SECRET_PATTERNS and SEVERITY_MAP are imported from safe_pipe_core.py
 
 COLOR_MAP = {
     "Critical": "red",
@@ -83,10 +68,11 @@ def mask_value(val, show_full=False):
     # single-line mask: keep first 4 and last 4
     return f"{s[:4]}...{s[-4:]}"
 
-# ---------- Sidebar: File Selection ----------
+# ---------- Sidebar: Scan Options ----------
 st.sidebar.header("Scan Options")
-uploaded_files = st.sidebar.file_uploader("Upload files for scanning", type=["txt", "py", "js", "env", "json", "md"], accept_multiple_files=True)
-use_demo_file = st.sidebar.checkbox("Use demo test file (`test_secrets.txt`)", value=not uploaded_files)
+uploaded_files = st.sidebar.file_uploader("Upload files for scanning", accept_multiple_files=True)
+local_path = st.sidebar.text_input("Local File or Folder Path", placeholder="C:/my_project or D:/secrets.txt")
+use_demo_file = st.sidebar.checkbox("Use demo test file (`test_secrets.txt`)", value=not (uploaded_files or local_path))
 show_full = st.sidebar.checkbox("Show full secret values (warning: exposes secrets)", value=False)
 
 # ---------- Prepare Demo File ----------
@@ -107,8 +93,8 @@ TOKEN=abcd1234efgh5678ijkl9012mnop3456qrst
 
 # ---------- Scan Button ----------
 if st.button("Start Scan"):
-    if not uploaded_files and not use_demo_file:
-        st.error("Please upload files or select the demo file.")
+    if not uploaded_files and not use_demo_file and not local_path:
+        st.error("Please upload files, enter a local path, or select the demo file.")
     else:
         st.info("Scanning files, please wait...")
 
@@ -127,7 +113,30 @@ if st.button("Start Scan"):
                 except Exception as e:
                     st.error(f"Error reading {uploaded_file.name}: {e}")
 
-        # 2. Scan Demo File if selected
+        # 2. Scan Local Path if provided
+        if local_path:
+            if os.path.exists(local_path):
+                try:
+                    if os.path.isfile(local_path):
+                        with open(local_path, 'r', errors='ignore') as f:
+                            content = f.read()
+                        findings.extend(scan_content(content, source=local_path))
+                    else:
+                        for root, dirs, files in os.walk(local_path):
+                            for file_name in files:
+                                f_path = os.path.join(root, file_name)
+                                try:
+                                    with open(f_path, 'r', errors='ignore') as f:
+                                        content = f.read()
+                                    findings.extend(scan_content(content, source=f_path))
+                                except Exception as e:
+                                    st.warning(f"Skipping {f_path}: {e}")
+                except Exception as e:
+                    st.error(f"Error scanning local path: {e}")
+            else:
+                st.error(f"Local path does not exist: {local_path}")
+
+        # 3. Scan Demo File if selected
         if use_demo_file:
             try:
                 with open(demo_file_path, 'r', errors='ignore') as f:
