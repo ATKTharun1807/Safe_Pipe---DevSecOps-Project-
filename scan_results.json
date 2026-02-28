@@ -1,50 +1,14 @@
 [
     {
         "type": "Token",
-        "value": "55a56653a077210ebaedbbfbeca3ee93",
-        "file": ".env",
+        "value": "84BE501D8FD01AD7986EAFAEB7D0AF9F",
+        "file": "Chief_Minister_Election_Report.pdf",
         "severity": "Low"
     },
     {
         "type": "Token",
-        "value": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NWE1NjY1M2EwNzcyMTBlYmFlZGJi",
-        "file": ".env",
-        "severity": "Low"
-    },
-    {
-        "type": "Token",
-        "value": "ZmJlY2EzZWU5MyIsIm5iZiI6MTc3MDI3MDcyNi4y",
-        "file": ".env",
-        "severity": "Low"
-    },
-    {
-        "type": "Token",
-        "value": "NzgsInN1YiI6IjY5ODQzMDA2Y2YwYjhjOGRlOTRm",
-        "file": ".env",
-        "severity": "Low"
-    },
-    {
-        "type": "Token",
-        "value": "Njc1YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2",
-        "file": ".env",
-        "severity": "Low"
-    },
-    {
-        "type": "Token",
-        "value": "ksbmcg43l3sTc8Np9A26VU",
-        "file": ".env",
-        "severity": "Low"
-    },
-    {
-        "type": "Token",
-        "value": "AIzaSyBXJ6FWddxTmhFFUTmFHB2LSt9ZPen0CjY",
-        "file": ".env",
-        "severity": "Low"
-    },
-    {
-        "type": "Token",
-        "value": "80d9e05d0506c8a5d1c2fb",
-        "file": ".env",
+        "value": "84BE501D8FD01AD7986EAFAEB7D0AF9F",
+        "file": "Chief_Minister_Election_Report.pdf",
         "severity": "Low"
     }
 ]

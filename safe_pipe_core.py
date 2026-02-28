@@ -6,10 +6,11 @@ import json
 # ---------- Secret Patterns ----------
 SECRET_PATTERNS = {
     "AWS Access Key": r"AKIA[0-9A-Z]{16}",
-    "AWS Secret Key": r"(?i)aws(.{0,20})?['\"][0-9a-zA-Z/+]{40}['\"]?",
-    "Private Key": r"['\"]?-----BEGIN PRIVATE KEY-----['\"]?",
-    "Password": r"(?i)password\s*=\s*['\"].+?['\"]",
-    "Token": r"['\"]?[A-Za-z0-9]{20,40}(\.[A-Za-z0-9]{20,40}){0,2}['\"]?"
+    "AWS Secret Key": r"(?i)aws(?:.{0,20})?['\"][0-9a-zA-Z/+]{40}['\"]?",
+    "Private Key": r"-----BEGIN [A-Z ]+ PRIVATE KEY-----",
+    "Password": r"(?i)(?:password|passwd|pwd)(?:\s*[:=]\s*|\s+is\s+)[#]?[a-zA-Z0-9$!@#%^&*()_\-+=]{5,30}",
+    "Generic Token": r"(?i)(?:token|api_key|apikey|secret)(?:\s*[:=]\s*|\s+is\s+)['\"]?[0-9a-zA-Z]{16,64}['\"]?",
+    "GitHub Token": r"ghp_[a-zA-Z0-9]{36}"
 }
 
 
@@ -19,23 +20,24 @@ SEVERITY_MAP = {
     "Private Key": "Critical",
     "AWS Access Key": "Medium",
     "AWS Secret Key": "Medium",
+    "GitHub Token": "Medium",
     "Password": "Low",
-    "Token": "Low"
+    "Generic Token": "Low"
 }
 
 # ---------- Scan Function ----------
 def scan_file(file_path):
     findings = []
     try:
-        with open(file_path, "r", errors="ignore") as f:
+        with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
             content = f.read()
             for secret_name, pattern in SECRET_PATTERNS.items():
-                matches = re.findall(pattern, content)
-                for match in matches:
+                for m in re.finditer(pattern, content):
+                    value = m.group(0)
                     severity = SEVERITY_MAP.get(secret_name, "Low")
                     findings.append({
                         "type": secret_name,
-                        "value": match,
+                        "value": str(value),
                         "file": file_path,
                         "severity": severity
                     })
@@ -62,7 +64,11 @@ def scan_folder(folder_path, output_file="scan_results.json"):
         all_findings = scan_file(folder_path)
     else:
         for root, dirs, files in os.walk(folder_path):
+            # Only skip .git and heavy dependency folders, but keep .github, etc.
+            dirs[:] = [d for d in dirs if d not in ('.git', 'node_modules', '__pycache__', 'venv', 'env', 'dist', 'build')]
             for file_name in files:
+                if file_name.lower().endswith(('.exe', '.dll', '.so', '.png', '.jpg', '.jpeg', '.gif', '.mp4', '.zip', '.tar', '.gz', '.pdf')):
+                    continue
                 file_path = os.path.join(root, file_name)
                 findings = scan_file(file_path)
                 all_findings.extend(findings)

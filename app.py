@@ -99,10 +99,12 @@ if st.button("Start Scan"):
         st.info("Scanning files, please wait...")
 
         findings = []
+        scanned_files = []
         
         # 1. Scan Uploaded Files
         if uploaded_files:
             for uploaded_file in uploaded_files:
+                scanned_files.append(uploaded_file.name)
                 try:
                     raw = uploaded_file.read()
                     content = raw.decode('utf-8', errors='ignore')
@@ -118,15 +120,21 @@ if st.button("Start Scan"):
             if os.path.exists(local_path):
                 try:
                     if os.path.isfile(local_path):
-                        with open(local_path, 'r', errors='ignore') as f:
+                        scanned_files.append(local_path)
+                        with open(local_path, 'r', encoding='utf-8', errors='ignore') as f:
                             content = f.read()
                         findings.extend(scan_content(content, source=local_path))
                     else:
                         for root, dirs, files in os.walk(local_path):
+                            # Only skip .git and major build/cache dirs, keep .github, .vscode etc.
+                            dirs[:] = [d for d in dirs if d not in ('.git', 'node_modules', '__pycache__', 'venv', 'env', 'dist', 'build')]
                             for file_name in files:
+                                if file_name.lower().endswith(('.exe', '.dll', '.so', '.png', '.jpg', '.jpeg', '.gif', '.mp4', '.zip', '.tar', '.gz', '.pdf')):
+                                    continue
                                 f_path = os.path.join(root, file_name)
+                                scanned_files.append(f_path)
                                 try:
-                                    with open(f_path, 'r', errors='ignore') as f:
+                                    with open(f_path, 'r', encoding='utf-8', errors='ignore') as f:
                                         content = f.read()
                                     findings.extend(scan_content(content, source=f_path))
                                 except Exception as e:
@@ -138,8 +146,9 @@ if st.button("Start Scan"):
 
         # 3. Scan Demo File if selected
         if use_demo_file:
+            scanned_files.append("demo_test_secrets.txt")
             try:
-                with open(demo_file_path, 'r', errors='ignore') as f:
+                with open(demo_file_path, 'r', encoding='utf-8', errors='ignore') as f:
                     content = f.read()
                 findings.extend(scan_content(content, source="demo_test_secrets.txt"))
             except Exception as e:
@@ -152,8 +161,11 @@ if st.button("Start Scan"):
         st.subheader("Scan Summary")
         col1, col2, col3 = st.columns(3)
         col1.metric("Total Secrets Found", total)
-        col2.metric("Files Scanned", len(files))
+        col2.metric("Files Scanned", len(scanned_files))
         col3.metric("Critical Secrets", severity_counts.get("Critical", 0))
+
+        with st.expander("Show list of scanned files"):
+            st.write(scanned_files)
 
         # ---------- Secrets by Type ----------
         st.subheader("Secrets by Type")
